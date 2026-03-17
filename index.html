@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Especialista em proteção de garagens e docas. Cantoneiras em EVA, protetores de pilar e soluções de sinalização em Bragança Paulista e região.">
+    <title>Jeferson Resende | Proteção e Sinalização Industrial</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #FFCC00;
+            --dark: #121212;
+            --light: #F4F4F4;
+            --text: #333;
+            --white: #ffffff;
+            --whatsapp: #25D366;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; background-color: var(--light); color: var(--text); line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Roboto', sans-serif; text-transform: uppercase; }
+
+        /* Header */
+        header { background: var(--dark); color: var(--white); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 4px solid var(--primary); }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        .logo span { color: var(--primary); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.9rem; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1580674271209-40e48a159191?auto=format&fit=crop&q=80&w=1470') center/cover; height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--white); padding: 0 20px; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem; }
+        .btn-cta { background: var(--primary); color: var(--dark); padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 5px; transition: 0.3s; }
+        .btn-cta:hover { transform: scale(1.05); background: #e6b800; }
+
+        /* Products Section */
+        .section-padding { padding: 60px 5%; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { font-size: 2rem; position: relative; display: inline-block; }
+        .section-title h2::after { content: ''; width: 50%; height: 4px; background: var(--primary); position: absolute; bottom: -10px; left: 25%; }
+
+        .grid-products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .product-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-img { width: 100%; height: 250px; background: #ddd; object-fit: cover; }
+        .product-info { padding: 20px; }
+        .product-info h3 { margin-bottom: 10px; font-size: 1.2rem; }
+        .product-info p { font-size: 0.9rem; color: #666; margin-bottom: 15px; }
+        .btn-small { display: inline-block; border: 2px solid var(--dark); padding: 5px 15px; text-decoration: none; color: var(--dark); font-weight: 600; border-radius: 4px; }
+
+        /* Projects/Reviews */
+        .projects { background: var(--dark); color: var(--white); }
+        .grid-projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .project-item { background: #222; padding: 20px; border-left: 4px solid var(--primary); }
+
+        /* Contact Section */
+        .contact { background: var(--white); text-align: center; }
+        .contact-box { max-width: 600px; margin: 0 auto; }
+        
+        /* Footer */
+        footer { background: var(--dark); color: #888; padding: 40px 5% 20px; text-align: center; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: #888; text-decoration: none; margin: 0 10px; }
+
+        /* WhatsApp Button */
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: var(--whatsapp); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 1000; text-decoration: none; font-size: 30px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            header { flex-direction: column; gap: 10px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">JR <span>PROTEÇÃO</span></div>
+        <nav>
+            <a href="#produtos">PRODUTOS</a>
+            <a href="#projetos">PROJETOS</a>
+            <a href="#contato">CONTATO</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Segurança e Proteção para seu Patrimônio</h1>
+        <p>Especialista em cantoneiras, protetores de docas e sinalização industrial em Bragança Paulista.</p>
+        <a href="#contato" class="btn-cta">SOLICITAR ORÇAMENTO</a>
+    </section>
+
+    <section id="produtos" class="section-padding">
+        <div class="section-title">
+            <h2>Nossas Soluções</h2>
+        </div>
+        <div class="grid-products">
+            <div class="product-card">
+                <img src="https://i.imgur.com/uVj1K2R.jpg" alt="Cantoneira em L" class="product-img">
+                <div class="product-info">
+                    <h3>Cantoneira em L (50cm)</h3>
+                    <p>Proteção robusta para quinas de pilares. Disponível em amarelo e preto para máxima visibilidade.</p>
+                    <a href="#" class="btn-small">Ver detalhes</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.imgur.com/pYI7M07.jpg" alt="Manta EVA" class="product-img">
+                <div class="product-info">
+                    <h3>Manta de Proteção EVA</h3>
+                    <p>Ideal para paredes laterais de garagens. Absorve impactos e evita riscos na lataria.</p>
+                    <a href="#" class="btn-small">Ver detalhes</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.imgur.com/8N69vT7.jpg" alt="Protetor de Doca" class="product-img">
+                <div class="product-info">
+                    <h3>Protetor de Doca Park</h3>
+                    <p>Alta resistência para áreas de carga e descarga. Proteção extrema contra impactos pesados.</p>
+                    <a href="#" class="btn-small">Ver detalhes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section-padding projects">
+        <div class="section-title">
+            <h2 style="color: white;">Projetos Executados</h2>
+        </div>
+        <div class="grid-projects">
+            <div class="project-item">
+                <p>"Instalação completa em condomínio residencial em Bragança Paulista. 150 pilares protegidos."</p>
+                <small>- Condomínio Jd. Europa</small>
+            </div>
+            <div class="project-item">
+                <p>"Revestimento de docas de carga com material de alta durabilidade para transportadora local."</p>
+                <small>- Logística Express</small>
+            </div>
+            <div class="project-item">
+                <p>"Proteção de rampas e quinas com sinalização padrão industrial."</p>
+                <small>- Estacionamento Central</small>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding contact">
+        <div class="section-title">
+            <h2>Fale Conosco</h2>
+        </div>
+        <div class="contact-box">
+            <p>Atendimento rápido para Bragança Paulista, Atibaia, Jundiaí e região.</p><br>
+            <p><strong>Email:</strong> contato@jefersonresende.com.br</p>
+            <p><strong>Localização:</strong> Bragança Paulista - SP</p><br>
+            <a href="https://wa.me/SEUNUMERO" class="btn-cta" style="background: var(--whatsapp); color: white;">ENVIAR WHATSAPP</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#produtos">Produtos</a> | 
+            <a href="#projetos">Projetos</a> | 
+            <a href="#contato">Contato</a>
+        </div>
+        <p>&copy; 2026 Jeferson Resende - Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/SEUNUMERO" class="whatsapp-float" target="_blank">
+        <i>W</i>
+    </a>
+
+</body>
+</html>
